@@ -30,9 +30,11 @@ project "yaml-cpp"
 		staticruntime "off"
 
 	filter "configurations:Debug"
+		staticruntime "on"
 		runtime "Debug"
 		symbols "on"
 
 	filter "configurations:Release"
+		staticruntime "on"
 		runtime "Release"
 		optimize "on"
